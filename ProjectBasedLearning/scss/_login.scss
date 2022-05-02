@@ -1,69 +1,74 @@
 $color_1: white;
-$font-family_1: Arial, Helvetica, sans-serif;
-$background-color_1: #04aa6d;
-$background-color_2: #f44336;
+$color_2: dodgerblue;
+$background-color_1: #ddd;
+$background-color_2: #ff652f;
+$background-color_3: #f1f1f1;
 
-/* Change styles for span and cancel button on extra small screens */
-body {
-  font-family: $font-family_1;
+/* Add padding to containers */
+/* Full-width input fields */
+/* Overwrite default styles of hr */
+/* Set a style for the submit/register button */
+/* Add a blue text color to links */
+/* Set a grey background color and center the text of the "sign in" section */
+* {
+  box-sizing: border-box;
 }
-form {
-  border: 3px solid #f1f1f1;
+.container {
+  padding-top: 12rem;
+  padding-bottom: 0%;
+  padding-left: 40%;
 }
 input[type="text"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  width: auto;
+  padding: 15px;
+  margin: 1px 60px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  border: none;
+  background: #f1f1f1;
+  &:focus {
+    background-color: $background-color_1;
+    outline: none;
+  }
 }
 input[type="password"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  width: auto;
+  padding: 15px;
+  margin: 5px 2rem 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  border: none;
+  background: #f1f1f1;
+  &:focus {
+    background-color: $background-color_1;
+    outline: none;
+  }
 }
-button {
-  background-color: $background-color_1;
+hr {
+  border: 1px solid #f1f1f1;
+  padding: auto;
+  width: 40%;
+  margin-bottom: 15px;
+}
+.registerbtn {
+  background-color: $background-color_2;
   color: $color_1;
-  padding: 14px 20px;
+  padding: 16px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: a;
+  opacity: 0.9;
   &:hover {
-    opacity: 0.8;
+    opacity: 1;
   }
 }
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: $background-color_2;
+a {
+  color: $color_2;
 }
-.imgcontainer {
+.signin {
+  background-color: $background-color_3;
   text-align: center;
-  margin: 24px 0 12px 0;
 }
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-.container {
-  padding: 16px;
-}
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
-    width: 100%;
-  }
+.social-icons {
+  position: initial;
+  margin-top: 12rem;
 }
