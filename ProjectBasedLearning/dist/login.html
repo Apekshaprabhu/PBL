@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <header>
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Login/Signup</title>
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
+
+      <nav class="nav">
+        <ul class="menu-nav">
+          <li class="menu-nav__item">
+            <a href="index.html" class="menu-nav__link"> Home </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="about.html" class="menu-nav__link"> About Us </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="projects.html" class="menu-nav__link"> Projects </a>
+          </li>
+          <li class="menu-nav__item active">
+            <a href="contact.html" class="menu-nav__link"> Contact Us </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="login.html" class="menu-nav__link"> Login/Signup </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </head>
+  <body>
+    <h2>Login Form</h2>
+
+    <form action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+      </div>
+
+      <div class="container" style="background-color: #f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+    <div class="social-icons">
+        <a href="#!">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+
+      <footer>&copy; Copyright 2022</footer>
+    </section>
+  </main>
+
+  <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
