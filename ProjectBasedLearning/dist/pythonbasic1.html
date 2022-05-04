@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Python-1</title>
+    <style>
+        *{
+            background-color:#ff652f;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+        }
+        .p1{
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+        .p2{
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+        }
+        .p11{
+            text-align:left;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .start{
+            position: absolute;
+right:    0;
+bottom:   100;
+        }
+       
+    </style>
+  </head>
+  <body>
+    <h1>QR code generation using Python</h1>
+    <p class="p1">
+      QR code stands for Quick Response Code. QR codes may look simple but they
+      are capable of storing lots of data. Irrespective of how much data they
+      contain when scanned QR code allows the user to access information
+      instantly. That is why they are called Quick Response Code.
+    </p>
+    <br/>
+    <p class="p2">These are being used in many scenarios these days. It first appeared in Japan in 1994. QR codes can be used to store(encode) lots of data and that too of various types. For example, they can be used to encode:
+
+       <pre class="p11">Contact details
+       1)Facebook ids, Instagram ids, Twitter ids, WhatsApp ids, and more.
+       2)Event Details
+       3)Youtube links
+       4)Product details
+       5)Link directly to download an app on the Apple App Store or Google Play.
+       6)They are also being used in doing digital transactions by simply scanning QR codes.
+       7)Access Wi-Fi by storing encryption details such as SSID, password, and encryption type.
+       </pre> This list goes on….!</p>
+       <br/>
+       <img src="./img/qr.png" alt="missing"/>
+       <p >We just saw some advantages of QR codes. Now we will learn here how we can generate QR codes in Python.
+
+        For QR code generation using python, we are going to use a python module called QRcode.</p>
+        <p class="p3">Step 1:Install it using this command: pip install qrcode</p>
+        <p class="p3">We will generate a QR Code for encoding the youtube link and we will also explore more. QR code generation is simple. Just pass the text, link, or any content to ‘make’ function of QRcode module.</p>
+        <img src="./img/code_snippet1.png" alt="codesnippet1"/>
+        <p class="p3">On executing this code output is:</p>
+        <img src="./img/output1.png" alt="output missing"/>
+        <p class="p3">You can scan it and verify.
+            </p>
+        <p>You can see it’s just 3 lines of code to generate this QR Code. One more thing to mention is that it’s not necessary that you always have to give a link to qrcode.make() function. You can provide simple text also.</p>
+        <p>
+            For example:
+            </p>
+           <p>You can encode: India is a country with many religions. I love India.
+            </p>
+            <p>Let’s try it out:
+            </p>
+        <img src="./img/code_snippet2.png" alt="code_snippet2"/>
+        <p>Output QR Code for this text is:</p>
+        <img src="./img/output2.png" alt="output2"/>
+        <p>
+            Scan it from your mobile and you will get the content.
+            </p>
+<p> this is the one part, which involves generating a QR Code and scanning it. But what if we want to read this QR Code i.e., now we want to know what was encoded in the QR Code without scanning it. For this, we will use OpenCV. OpenCV is a library of programming functions focused on real-time computer vision tasks.
+</p>
+<p>Install opencv: pip install opencv-python
+</p>
+<p>Code to decode a QR code back to know the original string.
+        </p>
+        <img src="./img/code_snippet3.png" alt="codesnippet3"/>
+        <p>Output:</p>
+        <img src="./img/output3.png" alt=""/>
+        <p>This QRcode module in python provides many other functionalities.</p>
+        <p>Go and try out yourself</p>
+        <p>It'll be fun and amazing<button class="start"><a href="compiler.html">Start</a></button></p>
+  </body>
+</html>

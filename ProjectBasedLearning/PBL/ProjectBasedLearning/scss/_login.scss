@@ -4,6 +4,12 @@ $background-color_1: #ddd;
 $background-color_2: #ff652f;
 $background-color_3: #f1f1f1;
 
+/* Add padding to containers */
+/* Full-width input fields */
+/* Overwrite default styles of hr */
+/* Set a style for the submit/register button */
+/* Add a blue text color to links */
+/* Set a grey background color and center the text of the "sign in" section */
 * {
   box-sizing: border-box;
 }
@@ -11,8 +17,6 @@ $background-color_3: #f1f1f1;
   padding-top: 12rem;
   padding-bottom: 0%;
   padding-left: 40%;
-  background: url("../img/login_final.jpg") center top;
-  background-size: cover;
 }
 input[type="text"] {
   width: auto;
@@ -59,9 +63,6 @@ hr {
 }
 a {
   color: $color_2;
-  &:hover {
-    color: #ff652f;
-  }
 }
 .signin {
   background-color: $background-color_3;
@@ -69,5 +70,5 @@ a {
 }
 .social-icons {
   position: initial;
-  margin-top: 10rem;
+  margin-top: 12rem;
 }
